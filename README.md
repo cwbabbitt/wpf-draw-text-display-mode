@@ -1,0 +1,3 @@
+Beginning with .NET Framework version 4.0, WPF includes the option for "Display" text rendering mode, allowing for clearer text rendering than in the other "Ideal" mode. Display mode is easy to apply to UI controls and FormattedText objects through XAML or code-behind, which covers most use-cases. For cases requiring special character layout through a GlyphRun, however, WPF does not provide any built-in way to use Display mode rendering. This code uses reflection to use Display mode with GlyphRun rendering.
+
+This case is most useful for the common case where text needs to be positioned in Ideal mode, but displayed in Display mode--that is, document display requiring precise layout and clear rendering.
